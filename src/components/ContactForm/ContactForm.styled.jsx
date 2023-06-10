@@ -1,8 +1,8 @@
 import styled from 'styled-components';
-import { Form, Field } from 'formik';
+
 import { font, flexCenter } from 'style/mixins';
 
-export const FormBlock = styled(Form)`
+export const Form = styled.form`
   ${flexCenter({ fw: 'no-wrap', ai: 'center', jc: 'center' })};
   flex-direction: column;
   justify-content: space-around;
@@ -14,14 +14,7 @@ export const FormBlock = styled(Form)`
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.22), 0px 2px 2px rgba(0, 0, 0, 0.24),
     0px 2px 1px rgba(0, 0, 0, 0.32);
 `;
-
-export const BoxName = styled.div`
-  width: 90%;
-`;
-export const BoxNumber = styled.div`
-  width: 90%;
-`;
-export const Input = styled(Field)`
+export const Input = styled.input`
   border: 0;
   outline: 0;
   width: 100%;
@@ -38,6 +31,14 @@ export const Input = styled(Field)`
       inset -1px -1px 2px ${props => props.theme.colors.colorShadow};
   }
 `;
+
+export const BoxName = styled.div`
+  width: 90%;
+`;
+export const BoxNumber = styled.div`
+  width: 90%;
+`;
+
 
 export const Label = styled.label`
   ${font({ fs: 18, fw: 700, lh: 20 })};

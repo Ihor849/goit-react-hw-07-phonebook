@@ -10,6 +10,19 @@ export const Item = styled.li`
   border-radius: ${props => props.theme.spacing(2)};
   padding: 5px 15px;
 `;
+export const Wrapper =styled.div`
+display: flex;
+flex-direction: column;
+gap: 5px;
+`
+export const Wrapname = styled.div`
+display: flex;
+flex-direction: column;
+background-color: #c2b6b6;
+
+
+
+`
 
 export const Button = styled.button`
   border: 1px solid ${props => props.theme.colors.black};
